@@ -14,7 +14,7 @@ let removeBtn;
 let checkBtn;
 let newText;
 let checked;
-let arr = [];
+let game = false;
 
 function addBookList() {
   addBtn.addEventListener("click", () => {
@@ -75,8 +75,8 @@ function removeEditBtn() {
   });
 
   clear.addEventListener("click", () => {
-      newTable.remove()
-  
+    // newTable.remove()
+    window.location.reload();
   });
 }
 function removeElements() {
